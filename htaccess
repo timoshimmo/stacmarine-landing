@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteOptions inherit
+RewriteCond %{HTTP_HOST} ^stac\-marine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.stac\-marine\.com$
+RewriteRule ^(.*)$ "https\:\/\/stacmarine\.com\/$1" [R=301,L]
